@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block start %}
+    <div class="container">
+        <form class="register_form" method="post">
+            {% csrf_token %}
+            <h2 class="main_heading">Register</h2>
+            {% if messages %}
+                <div class="alert" role="alert">
+                    {% for message in messages %}
+                        {{ message }}
+                    {% endfor %}
+                </div>
+            {% endif %} 
+            <div class="form_fields">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" name="username" required>
+            </div>
+            <div class="form_fields">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" name="password" required>
+            </div>
+            <p> Already have an account <a href="/login/">login</a></p>
+            <button type="submit" class='register_btn'>Register</button>
+        </form>
+    </div>
+{% endblock %}

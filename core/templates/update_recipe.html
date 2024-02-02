@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block start %}
+
+    <h1 class="text-6xl">This is index Page </h1>
+    <div>
+        <a href="/contact/">Contact</a> |
+        <a href="/about/">About</a>
+    </div>
+    <div class="container">
+        <form class="recipe_form" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <h2 class="main_heading">Update Recipe</h2>
+            <div class="form_fields">
+                <label for="recipe_name" class="form-label">Recipe name</label>
+                <input type="text" name="recipe_name" value="{{ recipe.recipe_name }}" required>
+            </div>
+            <div class="form_fields">
+                <label for="recipe_desc" class="form-label">Recipe description</label>
+                <textarea name="recipe_desc">{{ recipe.recipe_desc }}</textarea>
+            </div>
+            <div class="form_fields">
+                <label for="recipe_image" class="form-label">Recipe image</label>
+                <input type="file" name="recipe_image">
+            </div>
+            <button type="submit" class='submit_btn'>Update recipe</button>
+        </form>
+    </div>
+{% endblock %}

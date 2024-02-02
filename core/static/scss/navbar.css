@@ -1,0 +1,11 @@
+nav .navbar {
+  @apply flex justify-between m-4;
+}
+nav .navbar .logo {
+  @apply text-3xl;
+}
+nav .navbar .user_action {
+  @apply bg-blue-600 text-white py-2 px-4 rounded-2xl;
+}
+
+/*# sourceMappingURL=navbar.css.map */

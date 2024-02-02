@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply m-0 p-0  box-border;
+}
+
+.demo {
+  @apply border border-black mx-auto mt-4;
+  tr, td, th {
+    @apply border border-black p-4;
+  }
+
+  .del-btn {
+    @apply bg-red-600 text-white py-2 px-4 rounded-xl;
+  }
+
+  .update-btn {
+    @apply bg-blue-600 text-white py-2 px-4 rounded-xl;
+  }
+}
+
+.recipe_form {
+  @apply w-1/2 mx-auto p-10 shadow-lg mb-10;
+  .main_heading {
+    @apply text-3xl;
+  }
+
+  .form_fields {
+    @apply mt-4  flex flex-col;
+    input, textarea {
+      @apply border border-gray-500;
+    }
+  }
+
+  .submit_btn {
+    @apply bg-green-500 text-white px-10 py-2 mt-4 rounded-3xl;
+  }
+}
+
+.search_bar {
+  @apply flex  mx-auto items-center justify-center gap-4;
+  input {
+    @apply border border-gray-500;
+  }
+
+  .search_btn {
+    @apply bg-blue-500 text-white px-8 py-1 rounded-2xl;
+  }
+}
+
+.register_form {
+  @apply w-1/2 mx-auto p-10 shadow-lg mb-10 mt-10;
+  .main_heading {
+    @apply text-3xl;
+  }
+
+  .alert {
+    @apply bg-blue-600 text-white my-4 p-2;
+  }
+
+  .form_fields {
+    @apply mt-4  flex flex-col;
+    input {
+      @apply border border-gray-500;
+    }
+  }
+
+  .register_btn {
+    @apply bg-blue-500 text-white px-8 py-1 rounded-2xl;
+  }
+
+  p {
+    @apply m-4;
+    a {
+      @apply text-blue-600 decoration-solid underline;
+    }
+  }
+}
+
+.login_form {
+  @apply w-1/2 mx-auto p-10 shadow-lg mb-10 mt-10;
+  .main_heading {
+    @apply text-3xl;
+  }
+
+  .alert {
+    @apply bg-blue-600 text-white my-4 p-2;
+  }
+
+  .form_fields {
+    @apply mt-4  flex flex-col;
+    input {
+      @apply border border-gray-500;
+    }
+  }
+
+  .login_btn {
+    @apply bg-blue-500 text-white px-8 py-1 rounded-2xl;
+  }
+
+  p {
+    @apply m-4;
+    a {
+      @apply text-blue-600 underline decoration-solid ;
+    }
+  }
+}

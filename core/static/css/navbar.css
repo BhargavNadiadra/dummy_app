@@ -1,0 +1,24 @@
+nav .navbar {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between
+}
+
+nav .navbar .logo {
+  font-size: 1.875rem;
+  line-height: 2.25rem
+}
+
+nav .navbar .user_action {
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+/*# sourceMappingURL=navbar.css.map */
